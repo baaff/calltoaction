@@ -1,0 +1,59 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0, height=device-height">
+    <title>Memer</title>
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="http://cdn.foundation5.zurb.com/foundation.css" />
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  </head>
+  <body>
+
+    <div class="right" style="padding:16px 16px 8px;">
+      <strong class="left" style="font-size:11px;line-height:1.875;"><a href="https://github.com/andycochran/memer/">Memer on Github</a></strong>&nbsp;
+      <a class="github-button" href="https://github.com/andycochran/memer/fork" aria-label="Fork andycochran/memer on GitHub">Fork</a>
+      <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="columns small-11 small-centered medium-7 large-6 end">
+
+        <div class="memer">
+          <h1>#Memer</h1>
+          <ol style="font-size:13px;">
+            <li>Take a picture and add some text.</li>
+            <li>Save your #Memer image to your device.</li>
+            <li>Go to Instagram, Snapchat, Twitter, Facebook&hellip;</li>
+            <li>Share your #Memer image.</li>
+          </ol>
+          <div class="memer--inner-wrapper">
+            <div class="canvas-wrapper">
+              <canvas id="canvas"  width="900" height="900"></canvas>
+              <div id="textarea-anchor"></div>
+            </div>
+            <label for="memer--input" id="memer--choose" class="button expand">Add your selfie&hellip;</label>
+            <input type="file" id="memer--input" class="hide" />
+            <button id="memer--add-text" class="button expand memer--button-off">Add your word&hellip;</button>
+            <a id="memer--save" class="button expand memer--button-off" href="#">Download</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="http://cdn.foundation5.zurb.com/foundation.js"></script>
+    <script src="js/fabric.min.js"></script>
+    <script src="js/jquery.scrollintoview.min.js"></script>
+    <script src="js/exif.min.js"></script>
+    <script src="js/memer.js"></script>
+
+  </body>
+</html>
